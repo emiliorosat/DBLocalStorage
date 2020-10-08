@@ -27,8 +27,8 @@ document.getElementById("btn-clear")
 
 function Execute(operation){
     let result
-    let num1 = _input.num1.value 
-    let num2 = _input.num2.value
+    let num1 = parseInt( _input.num1.value )
+    let num2 = parseInt( _input.num2.value )
     switch (operation) {
         case "+":
             result = num1 + num2

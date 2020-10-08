@@ -11,49 +11,52 @@
     />
     <title>Usando LocalStorage</title>
   </head>
-  <body class="container">
-    <h1>Calculadora</h1>
-    <div class="row">
-      <div class="form col-4">
-        <label for="primerNumero">Primer Numero</label>
-        <input
-          type="number"
-          name="primerNumero"
-          id="primerNumero"
-          class="form-control"
-        />
-        <label for="segundoNumero">Segundo Numero</label>
-        <input
-          type="number"
-          name="segundoNumero"
-          id="segundoNumero"
-          class="form-control"
-        />
-        <div class="mt-3">
-          <button class="btn btn-primary" id="btn-sum">Sumar</button>
-          <button class="btn btn-secondary" id="btn-subtraction">Restar</button>
-          <button class="btn btn-success" id="btn-multiply">Multiplicar</button>
-          <button class="btn btn-info" id="btn-divide">Dividir</button>
-        </div>
-      </div>
-      <p
-        id="result"
-        class="col-6 ml-5 mt-3 overflow-hidden"
-        style="font-size: 3rem"
-      >
-        Resultado:
-      </p>
-    </div>
-    <div class="mt-5">
-      <h2>
-        Historial
-        <button class="btn btn-danger ml-3" id="btn-clear">Borrar</button>
-      </h2>
-      <hr />
-      <ul id="list"></ul>
-    </div>
+  <body >
+      <main class="container">
 
-    <script src="js/localstorage.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+          <h1>Calculadora</h1>
+          <div class="row">
+              <div class="form col-9">
+                  <label for="primerNumero">Primer Numero</label>
+                  <input
+                  type="number"
+                  name="primerNumero"
+                  id="primerNumero"
+                  class="form-control"
+                  />
+                  <label for="segundoNumero">Segundo Numero</label>
+                  <input
+                  type="number"
+                  name="segundoNumero"
+                  id="segundoNumero"
+                  class="form-control"
+                  />
+                  <div class="mt-3 w-100">
+                      <button class="btn btn-primary" id="btn-sum">Sumar</button>
+                      <button class="btn btn-secondary" id="btn-subtraction">Restar</button>
+                      <button class="btn btn-success" id="btn-multiply">Multiplicar</button>
+                      <button class="btn btn-info" id="btn-divide">Dividir</button>
+                    </div>
+                </div>
+                <p
+                id="result"
+                class="col-6 mt-3 overflow-hidden"
+                style="font-size: 3rem"
+                >
+                Resultado:
+            </p>
+        </div>
+        <div class="mt-5">
+            <h2>
+                Historial
+                <button class="btn btn-danger ml-3" id="btn-clear">Borrar</button>
+            </h2>
+            <hr />
+            <ul id="list"></ul>
+        </div>
+        
+    </main>
+        <script src="js/localstorage.js"></script>
+        <script src="js/app.js"></script>
+    </body>
 </html>
